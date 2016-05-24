@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0">
+  <Header>
+    <Title>ClassDefalt</Title>
+    <Description>
+
+    </Description>
+    <Shortcut>ClassDefalt</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <Default></Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CPP">
+      $name$()                    = default;
+      ~$name$()                   = default;
+      
+      $name$(const $name$&amp; )  = default;
+      $name$($name$&amp;&amp; )   = default;
+      
+      $name$&amp; operator=(const $name$&amp; ) = default;
+      $name$&amp; operator=($name$&amp;&amp; ) = default;
+    </Code>
+  </Snippet>
+</CodeSnippet>
